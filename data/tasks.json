@@ -342,7 +342,8 @@
       "subtasks": [],
       "priority": "medium",
       "createdAt": "2026-02-15T18:25:45.406Z",
-      "status": "permanent"
+      "status": "permanent",
+      "sortOrder": 0
     },
     {
       "id": "task_1771181066891",
@@ -369,7 +370,8 @@
       "subtasks": [],
       "priority": "medium",
       "createdAt": "2026-02-15T18:44:40.669Z",
-      "status": "permanent"
+      "status": "permanent",
+      "sortOrder": 1
     },
     {
       "id": "task_1771182479387",
@@ -382,12 +384,20 @@
       "subtasks": [],
       "priority": "medium",
       "createdAt": "2026-02-15T19:07:59.387Z",
-      "status": "backlog",
+      "status": "permanent",
       "sortOrder": 2
     }
   ],
   "projects": [],
   "activities": [
+    {
+      "type": "moved",
+      "actor": "xccanas",
+      "task": "test4",
+      "from": "backlog",
+      "to": "permanent",
+      "time": "just now"
+    },
     {
       "type": "moved",
       "actor": "xccanas",
@@ -479,5 +489,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-02-15T19:08:03.523Z"
+  "lastUpdated": "2026-02-15T19:09:54.827Z"
 }
