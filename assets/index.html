@@ -2093,6 +2093,7 @@
             to { transform: rotate(360deg); }
         }
     </style>
+<base target="_blank">
 </head>
 <body>
     <!-- Login Required Screen (shown when not authenticated) -->
@@ -2768,6 +2769,7 @@
             originalData: null,  // For detecting changes
             hasUnsavedChanges: false,
             isLoading: false,
+            isSaving: false,  // Prevent concurrent saves
             gatewayUrl: null  // Set via config or auto-detected
         };
 
@@ -3091,26 +3093,51 @@
                 return false;
             }
 
+            // Prevent duplicate saves
+            if (STATE.isSaving) {
+                console.log('Save already in progress, skipping duplicate');
+                return false;
+            }
+
+            STATE.isSaving = true;
+
             try {
+                // Add timeout to prevent freezing (10 second timeout)
+                const timeoutPromise = new Promise((_, reject) => {
+                    setTimeout(() => reject(new Error('Save operation timed out')), 10000);
+                });
+
                 const content = btoa(unescape(encodeURIComponent(JSON.stringify(STATE.data, null, 2))));
 
-                const response = await fetch(
-                    `https://api.github.com/repos/${CONFIG.owner}/${CONFIG.repo}/contents/${CONFIG.tasksFile}`,
-                    {
-                        method: 'PUT',
-                        headers: {
-                            'Authorization': `token ${STATE.token}`,
-                            'Accept': 'application/vnd.github.v3+json',
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify({
-                            message: commitMessage || 'Update tasks via Mission Control',
-                            content: content,
-                            sha: STATE.fileSha,
-                            branch: CONFIG.branch
-                        })
+                // If we don't have a SHA, fetch the current one first
+                if (!STATE.fileSha) {
+                    console.log('No SHA available, fetching current file state...');
+                    const shaSuccess = await refreshFileSha();
+                    if (!shaSuccess) {
+                        throw new Error('Could not get current file version');
                     }
-                );
+                }
+
+                const response = await Promise.race([
+                    fetch(
+                        `https://api.github.com/repos/${CONFIG.owner}/${CONFIG.repo}/contents/${CONFIG.tasksFile}`,
+                        {
+                            method: 'PUT',
+                            headers: {
+                                'Authorization': `token ${STATE.token}`,
+                                'Accept': 'application/vnd.github.v3+json',
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({
+                                message: commitMessage || 'Update tasks via Mission Control',
+                                content: content,
+                                sha: STATE.fileSha,
+                                branch: CONFIG.branch
+                            })
+                        }
+                    ),
+                    timeoutPromise
+                ]);
 
                 if (!response.ok) {
                     const error = await response.json();
@@ -3128,7 +3155,48 @@
 
             } catch (error) {
                 console.error('Error saving to GitHub:', error);
-                showToast('error', `Failed to save: ${error.message}`);
+
+                // Handle specific GitHub API errors
+                if (error.message && error.message.includes('422')) {
+                    showToast('error', 'Save failed: SHA mismatch. Refreshing and retrying...');
+                    // Clear SHA to force refresh on next attempt
+                    STATE.fileSha = null;
+                } else if (error.message && error.message.includes('403')) {
+                    showToast('error', 'Save failed: Permission denied. Check your token.');
+                } else if (error.message && error.message.includes('timed out')) {
+                    showToast('error', 'Save timed out. Please try again.');
+                } else {
+                    showToast('error', `Failed to save: ${error.message}`);
+                }
+
+                return false;
+            } finally {
+                STATE.isSaving = false;
+            }
+        }
+
+        // Helper function to refresh file SHA before saving
+        async function refreshFileSha() {
+            try {
+                const response = await fetch(
+                    `https://api.github.com/repos/${CONFIG.owner}/${CONFIG.repo}/contents/${CONFIG.tasksFile}`,
+                    {
+                        headers: {
+                            'Authorization': `token ${STATE.token}`,
+                            'Accept': 'application/vnd.github.v3+json'
+                        }
+                    }
+                );
+
+                if (!response.ok) {
+                    return false;
+                }
+
+                const fileData = await response.json();
+                STATE.fileSha = fileData.sha;
+                return true;
+            } catch (e) {
+                console.error('Failed to refresh SHA:', e);
                 return false;
             }
         }
@@ -3174,10 +3242,16 @@
             }
             
             try {
+                // Add timeout to prevent freezing
+                const timeoutPromise = new Promise((_, reject) => {
+                    setTimeout(() => reject(new Error('Crons save operation timed out')), 10000);
+                });
+
                 const content = btoa(unescape(encodeURIComponent(JSON.stringify({ crons: STATE.crons }, null, 2))));
                 
-                const response = await fetch(
-                    `https://api.github.com/repos/${CONFIG.owner}/${CONFIG.repo}/contents/data/crons.json`,
+                const response = await Promise.race([
+                    fetch(
+                        `https://api.github.com/repos/${CONFIG.owner}/${CONFIG.repo}/contents/data/crons.json`,
                     {
                         method: 'PUT',
                         headers: {
@@ -3192,7 +3266,9 @@
                             branch: CONFIG.branch
                         })
                     }
-                );
+                ]),
+                timeoutPromise
+                ]);
                 
                 if (!response.ok) {
                     const error = await response.json();
@@ -3201,6 +3277,7 @@
                 
                 const result = await response.json();
                 STATE.cronsSha = result.content.sha;
+                showToast('success', '✓ Saved crons to GitHub!');
                 return true;
                 
             } catch (error) {
@@ -4045,7 +4122,10 @@
             updateStats();
         }
 
-        // === AUTO-SAVE FUNKTION ===
+        // === AUTO-SAVE FUNCTION ===
+        let saveInProgress = false;
+        let pendingSave = null;
+
         async function autoSave(action) {
             if (!STATE.token || !STATE.user) {
                 showToast('warning', 'Not logged in - changes not saved');
@@ -4053,12 +4133,35 @@
                 return;
             }
 
+            // Prevent concurrent saves
+            if (saveInProgress) {
+                pendingSave = action;
+                console.log('Save in progress, queuing:', action);
+                return;
+            }
+
+            saveInProgress = true;
             const commitMessage = `${action} (via Mission Control)`;
             showToast('info', '💾 Saving...');
 
-            const success = await saveTasksToGitHub(commitMessage);
-            if (!success) {
-                markAsChanged(); // Show "unsaved changes" if failed
+            try {
+                const success = await saveTasksToGitHub(commitMessage);
+                if (!success) {
+                    markAsChanged(); // Show "unsaved changes" if failed
+                }
+            } catch (error) {
+                console.error('AutoSave error:', error);
+                showToast('error', 'Save failed: ' + error.message);
+                markAsChanged();
+            } finally {
+                saveInProgress = false;
+
+                // Process pending save if any
+                if (pendingSave) {
+                    const nextAction = pendingSave;
+                    pendingSave = null;
+                    setTimeout(() => autoSave(nextAction), 100);
+                }
             }
         }
 
@@ -6737,6 +6840,29 @@
                 loadCollaborators();
             }
         };
+
+        // === GLOBAL ERROR HANDLER ===
+        window.addEventListener('error', (e) => {
+            console.error('Global error:', e.error);
+            showToast('error', 'An error occurred. Check console for details.');
+            // Reset loading states to prevent UI freeze
+            STATE.isLoading = false;
+            STATE.isSaving = false;
+            document.querySelectorAll('.column-tasks').forEach(col => {
+                col.style.opacity = '1';
+            });
+        });
+
+        window.addEventListener('unhandledrejection', (e) => {
+            console.error('Unhandled promise rejection:', e.reason);
+            showToast('error', 'Operation failed: ' + (e.reason?.message || 'Unknown error'));
+            // Reset loading states
+            STATE.isLoading = false;
+            STATE.isSaving = false;
+            document.querySelectorAll('.column-tasks').forEach(col => {
+                col.style.opacity = '1';
+            });
+        });
 
         // === INIT ===
         document.addEventListener('DOMContentLoaded', async () => {
