@@ -33,6 +33,19 @@
       "completedAt": "2026-02-15T04:34:42.387Z",
       "archived": true,
       "archivedAt": "2026-02-15T04:34:55.634Z"
+    },
+    {
+      "id": "task_1771190890667",
+      "title": "Test Mission Control Workflow",
+      "description": "This tests if the webhook system works",
+      "project": "",
+      "tags": [
+        ""
+      ],
+      "subtasks": [],
+      "priority": "medium",
+      "createdAt": "2026-02-15T21:28:10.667Z",
+      "status": "backlog"
     }
   ],
   "projects": [],
@@ -86,5 +99,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-02-15T21:20:19.804Z"
+  "lastUpdated": "2026-02-15T21:28:10.667Z"
 }
