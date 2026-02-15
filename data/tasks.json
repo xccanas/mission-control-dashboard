@@ -35,52 +35,6 @@
       "archivedAt": "2026-02-15T04:34:55.634Z"
     },
     {
-      "id": "demo_joi_test",
-      "title": "🤖 Joi Demo Task — Test GitHub API Integration",
-      "description": "This task tests Joi's ability to create and manage tasks directly through GitHub API.\n\n**What should happen:**\n1. Joi creates this task in GitHub\n2. Dashboard shows the task automatically\n3. Joi can move the task between statuses\n4. Dashboard updates in real-time",
-      "status": "in_progress",
-      "project": "demo",
-      "tags": [
-        "demo",
-        "joi",
-        "github-api",
-        "test"
-      ],
-      "subtasks": [
-        {
-          "id": "demo_joi_001",
-          "title": "Test task creation via GitHub API",
-          "done": false
-        },
-        {
-          "id": "demo_joi_002",
-          "title": "Verify dashboard shows new task",
-          "done": false
-        },
-        {
-          "id": "demo_joi_003",
-          "title": "Test task status changes",
-          "done": false
-        }
-      ],
-      "priority": "high",
-      "comments": [
-        {
-          "author": "Joi",
-          "text": "Demo task created via GitHub API integration!",
-          "timestamp": "2026-02-15T19:35:00Z"
-        },
-        {
-          "author": "Joi",
-          "text": "🤖 Joi started processing this task using the proper Mission Control workflow!",
-          "createdAt": "2026-02-15T23:29:00Z"
-        }
-      ],
-      "createdAt": "2026-02-15T19:35:00Z",
-      "sortOrder": 20,
-      "processingStartedAt": "2026-02-15T23:29:00Z"
-    },
-    {
       "id": "task_1771188256171",
       "title": "hey joi, can you see this task?",
       "description": "hi, if you see this task move it to \"done\"",
@@ -156,5 +110,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-02-15T21:20:12.987Z"
+  "lastUpdated": "2026-02-15T21:20:17.086Z"
 }
