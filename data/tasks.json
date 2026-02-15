@@ -67,7 +67,7 @@
       "id": "guide_user",
       "title": "📖 User Guide — How to Use Mission Control",
       "description": "Learn how to use Mission Control effectively. Both you AND MoltBot can manage tasks!\n\n**Two ways to manage tasks:**\n• 👤 **You** — Use the Dashboard UI (drag & drop, buttons, forms)\n• 🤖 **MoltBot** — Uses CLI scripts or edits tasks.json directly",
-      "status": "done",
+      "status": "in_progress",
       "project": "system",
       "tags": [
         "guide",
@@ -249,8 +249,7 @@
         }
       ],
       "createdAt": "2026-01-01T00:00:01Z",
-      "sortOrder": 2,
-      "completedAt": "2026-02-15T04:42:42.222Z"
+      "sortOrder": 0
     },
     {
       "id": "task_example",
@@ -427,6 +426,14 @@
     {
       "type": "moved",
       "actor": "xccanas",
+      "task": "📖 User Guide — How to Use Mission Control",
+      "from": "done",
+      "to": "in_progress",
+      "time": "just now"
+    },
+    {
+      "type": "moved",
+      "actor": "xccanas",
       "task": "test2",
       "from": "permanent",
       "to": "done",
@@ -587,5 +594,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-02-15T19:24:41.429Z"
+  "lastUpdated": "2026-02-15T19:24:54.662Z"
 }
