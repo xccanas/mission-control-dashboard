@@ -386,6 +386,19 @@
       "createdAt": "2026-02-15T19:07:59.387Z",
       "status": "permanent",
       "sortOrder": 2
+    },
+    {
+      "id": "task_1771183362971",
+      "title": "test5",
+      "description": "",
+      "project": "",
+      "tags": [
+        ""
+      ],
+      "subtasks": [],
+      "priority": "medium",
+      "createdAt": "2026-02-15T19:22:42.971Z",
+      "status": "permanent"
     }
   ],
   "projects": [],
@@ -489,5 +502,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-02-15T19:09:54.827Z"
+  "lastUpdated": "2026-02-15T19:22:42.971Z"
 }
