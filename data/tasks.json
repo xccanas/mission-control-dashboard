@@ -400,6 +400,20 @@
       "createdAt": "2026-02-15T19:22:42.971Z",
       "status": "backlog",
       "sortOrder": 2
+    },
+    {
+      "id": "task_1771183377011",
+      "title": "test6",
+      "description": "",
+      "status": "scheduled",
+      "scheduledAt": "2026-02-16T16:22:00.000Z",
+      "priority": "medium",
+      "project": "system",
+      "tags": [
+        "scheduled"
+      ],
+      "subtasks": [],
+      "createdAt": "2026-02-15T19:22:57.011Z"
     }
   ],
   "projects": [],
