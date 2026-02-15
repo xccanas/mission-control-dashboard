@@ -315,7 +315,7 @@
       "isTemplate": false,
       "status": "done",
       "createdFromTemplate": "template_1771130648987",
-      "sortOrder": 4,
+      "sortOrder": 5,
       "completedAt": "2026-02-15T19:24:33.914Z"
     },
     {
@@ -358,7 +358,7 @@
       "priority": "medium",
       "createdAt": "2026-02-15T18:44:26.891Z",
       "status": "done",
-      "sortOrder": 2,
+      "sortOrder": 3,
       "completedAt": "2026-02-15T19:24:35.188Z"
     },
     {
@@ -372,8 +372,9 @@
       "subtasks": [],
       "priority": "medium",
       "createdAt": "2026-02-15T18:44:40.669Z",
-      "status": "backlog",
-      "sortOrder": 4
+      "status": "done",
+      "sortOrder": 2,
+      "completedAt": "2026-02-15T19:24:39.267Z"
     },
     {
       "id": "task_1771182479387",
@@ -387,7 +388,7 @@
       "priority": "medium",
       "createdAt": "2026-02-15T19:07:59.387Z",
       "status": "done",
-      "sortOrder": 3,
+      "sortOrder": 4,
       "completedAt": "2026-02-15T19:24:37.898Z"
     },
     {
@@ -422,6 +423,14 @@
   ],
   "projects": [],
   "activities": [
+    {
+      "type": "moved",
+      "actor": "xccanas",
+      "task": "test3",
+      "from": "backlog",
+      "to": "done",
+      "time": "just now"
+    },
     {
       "type": "moved",
       "actor": "xccanas",
@@ -569,5 +578,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-02-15T19:24:37.898Z"
+  "lastUpdated": "2026-02-15T19:24:39.267Z"
 }
