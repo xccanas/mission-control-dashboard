@@ -256,7 +256,7 @@
       "title": "Example Task — Delete me when ready!",
       "description": "This is an example of what a real task looks like. Feel free to edit or delete it.\n\n**Good task descriptions include:**\n- What needs to be done\n- Why it matters\n- Any constraints or requirements\n- Links to relevant resources",
       "status": "in_progress",
-      "project": "default",
+      "project": "system",
       "tags": [
         "example"
       ],
@@ -283,14 +283,7 @@
       "sortOrder": 0
     }
   ],
-  "projects": [
-    {
-      "id": "default",
-      "name": "My Project",
-      "color": "#3b82f6",
-      "icon": "📁"
-    }
-  ],
+  "projects": [],
   "activities": [
     {
       "type": "moved",
