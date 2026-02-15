@@ -245,7 +245,7 @@
         {
           "author": "Mission Control",
           "text": "This guide stays in Permanent so you can always reference it. The subtasks aren't meant to be 'completed' — they're documentation!",
-          "timestamp": "2026-01-01T00:00:00Z"
+          "timestamp": "2026-01-01T00:00:01Z"
         }
       ],
       "createdAt": "2026-01-01T00:00:01Z",
@@ -284,9 +284,64 @@
       "completedAt": "2026-02-15T04:34:42.387Z",
       "archived": true,
       "archivedAt": "2026-02-15T04:34:55.634Z"
+    },
+    {
+      "id": "demo_task",
+      "title": "🎯 Demo Task — Show Mission Control Working",
+      "description": "This task demonstrates the Mission Control system working with MoltBot. When you move this to 'In Progress', MoltBot should receive a notification and respond.\n\n**Goal:** Test the webhook notification system and verify MoltBot can see and respond to task changes.\n\n**What to do:**\n1. Drag this task to 'In Progress' column\n2. Wait for MoltBot to respond\n3. MoltBot should comment on this task\n4. Move to 'Review' when complete",
+      "status": "backlog",
+      "project": "demo",
+      "tags": [
+        "demo",
+        "test",
+        "webhook"
+      ],
+      "subtasks": [
+        {
+          "id": "demo_001",
+          "title": "Move task to In Progress",
+          "done": false
+        },
+        {
+          "id": "demo_002",
+          "title": "Verify MoltBot receives notification",
+          "done": false
+        },
+        {
+          "id": "demo_003",
+          "title": "Check MoltBot response in comments",
+          "done": false
+        },
+        {
+          "id": "demo_004",
+          "title": "Move to Review when testing complete",
+          "done": false
+        }
+      ],
+      "priority": "high",
+      "comments": [
+        {
+          "author": "MoltBot",
+          "text": "Demo task created! I can see this task in the shared task board. Move me to In Progress to test the webhook notification system!",
+          "timestamp": "2026-02-15T19:35:00Z"
+        }
+      ],
+      "createdAt": "2026-02-15T19:35:00Z",
+      "sortOrder": 10
     }
   ],
-  "projects": [],
+  "projects": [
+    {
+      "id": "system",
+      "name": "System",
+      "color": "#6366f1"
+    },
+    {
+      "id": "demo",
+      "name": "Demo",
+      "color": "#10b981"
+    }
+  ],
   "activities": [
     {
       "type": "moved",
@@ -329,7 +384,13 @@
       "actor": "Mission Control",
       "task": "User Guide",
       "time": "just now"
+    },
+    {
+      "type": "created",
+      "actor": "MoltBot",
+      "task": "Demo Task — Show Mission Control Working",
+      "time": "just now"
     }
   ],
-  "lastUpdated": "2026-02-15T04:35:08.295Z"
+  "lastUpdated": "2026-02-15T19:35:00Z"
 }
