@@ -4,7 +4,7 @@
       "id": "guide_onboarding",
       "title": "🚀 Onboarding Guide — Set Up Mission Control",
       "description": "Welcome to Mission Control! Follow these steps to complete your setup. Work through each subtask in order.\n\n**Tip:** Click on a subtask to see detailed instructions. Check it off when done.",
-      "status": "permanent",
+      "status": "backlog",
       "project": "system",
       "tags": [
         "guide",
@@ -281,11 +281,27 @@
       "comments": [],
       "createdAt": "2026-01-01T00:00:02Z",
       "sortOrder": 0,
-      "completedAt": "2026-02-15T04:34:42.387Z"
+      "completedAt": "2026-02-15T04:34:42.387Z",
+      "archived": true,
+      "archivedAt": "2026-02-15T04:34:55.634Z"
     }
   ],
   "projects": [],
   "activities": [
+    {
+      "type": "moved",
+      "actor": "xccanas",
+      "task": "🚀 Onboarding Guide — Set Up Mission Control",
+      "from": "permanent",
+      "to": "backlog",
+      "time": "just now"
+    },
+    {
+      "type": "archive",
+      "actor": "xccanas",
+      "task": "Example Task — Delete me when ready!",
+      "time": "just now"
+    },
     {
       "type": "moved",
       "actor": "xccanas",
@@ -315,5 +331,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-02-15T04:34:42.387Z"
+  "lastUpdated": "2026-02-15T04:35:08.295Z"
 }
