@@ -281,7 +281,7 @@
       "comments": [],
       "createdAt": "2026-01-01T00:00:02Z",
       "sortOrder": 0,
-      "completedAt": "2026-02-15T04:34:42.387Z",
+      "completedAt": "2026-02-15T19:24:59.568Z",
       "archived": true,
       "archivedAt": "2026-02-15T04:34:55.634Z"
     },
@@ -314,7 +314,7 @@
       "isTemplate": false,
       "status": "done",
       "createdFromTemplate": "template_1771130648987",
-      "sortOrder": 6,
+      "sortOrder": 5,
       "completedAt": "2026-02-15T19:24:33.914Z"
     },
     {
@@ -358,7 +358,7 @@
       "priority": "medium",
       "createdAt": "2026-02-15T18:44:26.891Z",
       "status": "done",
-      "sortOrder": 4,
+      "sortOrder": 3,
       "completedAt": "2026-02-15T19:24:35.188Z"
     },
     {
@@ -373,7 +373,7 @@
       "priority": "medium",
       "createdAt": "2026-02-15T18:44:40.669Z",
       "status": "done",
-      "sortOrder": 3,
+      "sortOrder": 2,
       "completedAt": "2026-02-15T19:24:39.267Z"
     },
     {
@@ -388,7 +388,7 @@
       "priority": "medium",
       "createdAt": "2026-02-15T19:07:59.387Z",
       "status": "done",
-      "sortOrder": 5,
+      "sortOrder": 4,
       "completedAt": "2026-02-15T19:24:37.898Z"
     },
     {
@@ -594,5 +594,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-02-15T19:24:54.662Z"
+  "lastUpdated": "2026-02-15T19:24:59.568Z"
 }
