@@ -37,11 +37,6 @@
   ],
   "projects": [
     {
-      "id": "system",
-      "name": "System",
-      "color": "#6366f1"
-    },
-    {
       "id": "demo",
       "name": "Demo",
       "color": "#10b981"
