@@ -323,7 +323,7 @@
       "status": "scheduled",
       "scheduledAt": "2026-02-16T15:15:00.000Z",
       "priority": "medium",
-      "project": "system",
+      "project": "",
       "tags": [
         "scheduled"
       ],
@@ -400,5 +400,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-02-15T18:14:42.850Z"
+  "lastUpdated": "2026-02-15T18:15:34.448Z"
 }
