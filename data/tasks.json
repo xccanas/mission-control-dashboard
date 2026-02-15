@@ -355,11 +355,20 @@
       "subtasks": [],
       "priority": "medium",
       "createdAt": "2026-02-15T18:44:26.891Z",
-      "status": "permanent"
+      "status": "backlog",
+      "sortOrder": 1
     }
   ],
   "projects": [],
   "activities": [
+    {
+      "type": "moved",
+      "actor": "xccanas",
+      "task": "test2",
+      "from": "permanent",
+      "to": "backlog",
+      "time": "just now"
+    },
     {
       "type": "moved",
       "actor": "xccanas",
@@ -435,5 +444,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-02-15T18:44:26.891Z"
+  "lastUpdated": "2026-02-15T18:44:35.553Z"
 }
