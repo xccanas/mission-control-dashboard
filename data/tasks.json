@@ -304,7 +304,7 @@
           "done": false
         },
         {
-          "id": "demo_joi_002", 
+          "id": "demo_joi_002",
           "title": "Verify dashboard shows new task",
           "done": false
         },
@@ -330,6 +330,19 @@
       "createdAt": "2026-02-15T19:35:00Z",
       "sortOrder": 20,
       "processingStartedAt": "2026-02-15T23:29:00Z"
+    },
+    {
+      "id": "task_1771188256171",
+      "title": "hey joi, can you see this task?",
+      "description": "hi, if you see this task move it to \"done\"",
+      "project": "system",
+      "tags": [
+        "system"
+      ],
+      "subtasks": [],
+      "priority": "medium",
+      "createdAt": "2026-02-15T20:44:16.171Z",
+      "status": "in_progress"
     }
   ],
   "projects": [
@@ -394,5 +407,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-02-15T23:29:00Z"
+  "lastUpdated": "2026-02-15T20:44:16.171Z"
 }
