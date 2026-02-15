@@ -45,11 +45,20 @@
       "subtasks": [],
       "priority": "medium",
       "createdAt": "2026-02-15T21:28:10.667Z",
-      "status": "backlog"
+      "status": "in_progress",
+      "sortOrder": 0
     }
   ],
   "projects": [],
   "activities": [
+    {
+      "type": "moved",
+      "actor": "xccanas",
+      "task": "Test Mission Control Workflow",
+      "from": "backlog",
+      "to": "in_progress",
+      "time": "just now"
+    },
     {
       "type": "moved",
       "actor": "xccanas",
@@ -99,5 +108,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-02-15T21:28:10.667Z"
+  "lastUpdated": "2026-02-15T21:28:18.151Z"
 }
