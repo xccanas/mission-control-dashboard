@@ -370,8 +370,8 @@
       "subtasks": [],
       "priority": "medium",
       "createdAt": "2026-02-15T18:44:40.669Z",
-      "status": "permanent",
-      "sortOrder": 1
+      "status": "backlog",
+      "sortOrder": 4
     },
     {
       "id": "task_1771182479387",
@@ -418,6 +418,14 @@
   ],
   "projects": [],
   "activities": [
+    {
+      "type": "moved",
+      "actor": "xccanas",
+      "task": "test3",
+      "from": "permanent",
+      "to": "backlog",
+      "time": "just now"
+    },
     {
       "type": "moved",
       "actor": "xccanas",
@@ -533,5 +541,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-02-15T19:24:16.695Z"
+  "lastUpdated": "2026-02-15T19:24:18.329Z"
 }
