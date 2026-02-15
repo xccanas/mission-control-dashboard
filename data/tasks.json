@@ -315,6 +315,20 @@
       "isTemplate": false,
       "status": "backlog",
       "createdFromTemplate": "template_1771130648987"
+    },
+    {
+      "id": "task_1771179314504",
+      "title": "test",
+      "description": "",
+      "status": "scheduled",
+      "scheduledAt": "2026-02-16T15:15:00.000Z",
+      "priority": "medium",
+      "project": "system",
+      "tags": [
+        "scheduled"
+      ],
+      "subtasks": [],
+      "createdAt": "2026-02-15T18:15:14.504Z"
     }
   ],
   "projects": [],
