@@ -2,7 +2,7 @@
   "tasks": [
     {
       "id": "guide_onboarding",
-      "title": "🚀 Onboarding Guide — Set Up Mission Control",
+      "title": "\ud83d\ude80 Onboarding Guide \u2014 Set Up Mission Control",
       "description": "Welcome to Mission Control! Follow these steps to complete your setup. Work through each subtask in order.\n\n**Tip:** Click on a subtask to see detailed instructions. Check it off when done.",
       "status": "backlog",
       "project": "system",
@@ -13,17 +13,17 @@
       "subtasks": [
         {
           "id": "sub_001",
-          "title": "1. Enable GitHub Pages: Settings → Pages → Branch: main → Save",
+          "title": "1. Enable GitHub Pages: Settings \u2192 Pages \u2192 Branch: main \u2192 Save",
           "done": false
         },
         {
           "id": "sub_002",
-          "title": "2. Create GitHub Token: github.com/settings/tokens → Generate (classic) → Scope: repo",
+          "title": "2. Create GitHub Token: github.com/settings/tokens \u2192 Generate (classic) \u2192 Scope: repo",
           "done": false
         },
         {
           "id": "sub_003",
-          "title": "3. Connect Dashboard: Open your GitHub Pages URL → Click 'Connect GitHub' → Paste token",
+          "title": "3. Connect Dashboard: Open your GitHub Pages URL \u2192 Click 'Connect GitHub' \u2192 Paste token",
           "done": false
         },
         {
@@ -33,17 +33,17 @@
         },
         {
           "id": "sub_005",
-          "title": "5. Enable Funnel: tailscale funnel 18789 → Copy your URL",
+          "title": "5. Enable Funnel: tailscale funnel 18789 \u2192 Copy your URL",
           "done": false
         },
         {
           "id": "sub_006",
-          "title": "6. Generate Webhook Token: openssl rand -hex 32 → Save it",
+          "title": "6. Generate Webhook Token: openssl rand -hex 32 \u2192 Save it",
           "done": false
         },
         {
           "id": "sub_007",
-          "title": "7. Add GitHub Webhook: Settings → Webhooks → Add → URL: https://YOUR-TAILSCALE-URL/hooks/github?token=YOUR-TOKEN",
+          "title": "7. Add GitHub Webhook: Settings \u2192 Webhooks \u2192 Add \u2192 URL: https://YOUR-TAILSCALE-URL/hooks/github?token=YOUR-TOKEN",
           "done": false
         },
         {
@@ -65,9 +65,9 @@
     },
     {
       "id": "guide_user",
-      "title": "📖 User Guide — How to Use Mission Control",
-      "description": "Learn how to use Mission Control effectively. Both you AND MoltBot can manage tasks!\n\n**Two ways to manage tasks:**\n• 👤 **You** — Use the Dashboard UI (drag & drop, buttons, forms)\n• 🤖 **MoltBot** — Uses CLI scripts or edits tasks.json directly",
-      "status": "permanent",
+      "title": "\ud83d\udcd6 User Guide \u2014 How to Use Mission Control",
+      "description": "Learn how to use Mission Control effectively. Both you AND MoltBot can manage tasks!\n\n**Two ways to manage tasks:**\n\u2022 \ud83d\udc64 **You** \u2014 Use the Dashboard UI (drag & drop, buttons, forms)\n\u2022 \ud83e\udd16 **MoltBot** \u2014 Uses CLI scripts or edits tasks.json directly",
+      "status": "in_progress",
       "project": "system",
       "tags": [
         "guide",
@@ -76,12 +76,12 @@
       "subtasks": [
         {
           "id": "sub_001",
-          "title": "— THE BOARD —",
+          "title": "\u2014 THE BOARD \u2014",
           "done": false
         },
         {
           "id": "sub_002",
-          "title": "Columns: Permanent (recurring) → Backlog → In Progress → Review → Done",
+          "title": "Columns: Permanent (recurring) \u2192 Backlog \u2192 In Progress \u2192 Review \u2192 Done",
           "done": false
         },
         {
@@ -96,22 +96,22 @@
         },
         {
           "id": "sub_005",
-          "title": "— CREATING TASKS —",
+          "title": "\u2014 CREATING TASKS \u2014",
           "done": false
         },
         {
           "id": "sub_006",
-          "title": "👤 You: Click '+' button in any column header",
+          "title": "\ud83d\udc64 You: Click '+' button in any column header",
           "done": false
         },
         {
           "id": "sub_007",
-          "title": "🤖 MoltBot: Edits data/tasks.json or uses CLI",
+          "title": "\ud83e\udd16 MoltBot: Edits data/tasks.json or uses CLI",
           "done": false
         },
         {
           "id": "sub_008",
-          "title": "— TASK DETAILS —",
+          "title": "\u2014 TASK DETAILS \u2014",
           "done": false
         },
         {
@@ -136,7 +136,7 @@
         },
         {
           "id": "sub_013",
-          "title": "Priority: High (🔴) / Medium (🟡) / Low (🟢)",
+          "title": "Priority: High (\ud83d\udd34) / Medium (\ud83d\udfe1) / Low (\ud83d\udfe2)",
           "done": false
         },
         {
@@ -146,7 +146,7 @@
         },
         {
           "id": "sub_015",
-          "title": "— WORKFLOW WITH MOLTBOT —",
+          "title": "\u2014 WORKFLOW WITH MOLTBOT \u2014",
           "done": false
         },
         {
@@ -156,7 +156,7 @@
         },
         {
           "id": "sub_017",
-          "title": "2. Move to 'In Progress' → MoltBot gets notified via webhook",
+          "title": "2. Move to 'In Progress' \u2192 MoltBot gets notified via webhook",
           "done": false
         },
         {
@@ -171,72 +171,72 @@
         },
         {
           "id": "sub_020",
-          "title": "5. You review: Approve → Done, or add feedback → back to In Progress",
+          "title": "5. You review: Approve \u2192 Done, or add feedback \u2192 back to In Progress",
           "done": false
         },
         {
           "id": "sub_021",
-          "title": "— DASHBOARD FEATURES —",
+          "title": "\u2014 DASHBOARD FEATURES \u2014",
           "done": false
         },
         {
           "id": "sub_022",
-          "title": "🔍 Search: Filter tasks by text",
+          "title": "\ud83d\udd0d Search: Filter tasks by text",
           "done": false
         },
         {
           "id": "sub_023",
-          "title": "📁 Project filter: Click project buttons to filter",
+          "title": "\ud83d\udcc1 Project filter: Click project buttons to filter",
           "done": false
         },
         {
           "id": "sub_024",
-          "title": "⚙️ Settings: Add/edit projects",
+          "title": "\u2699\ufe0f Settings: Add/edit projects",
           "done": false
         },
         {
           "id": "sub_025",
-          "title": "📦 Archive: Store completed tasks out of sight",
+          "title": "\ud83d\udce6 Archive: Store completed tasks out of sight",
           "done": false
         },
         {
           "id": "sub_026",
-          "title": "👥 Team: See repo collaborators (if public)",
+          "title": "\ud83d\udc65 Team: See repo collaborators (if public)",
           "done": false
         },
         {
           "id": "sub_027",
-          "title": "📚 Docs: Built-in documentation",
+          "title": "\ud83d\udcda Docs: Built-in documentation",
           "done": false
         },
         {
           "id": "sub_028",
-          "title": "— MOLTBOT CAPABILITIES —",
+          "title": "\u2014 MOLTBOT CAPABILITIES \u2014",
           "done": false
         },
         {
           "id": "sub_029",
-          "title": "🤖 Can CREATE tasks (via CLI or JSON)",
+          "title": "\ud83e\udd16 Can CREATE tasks (via CLI or JSON)",
           "done": false
         },
         {
           "id": "sub_030",
-          "title": "🤖 Can UPDATE task status, subtasks, comments",
+          "title": "\ud83e\udd16 Can UPDATE task status, subtasks, comments",
           "done": false
         },
         {
           "id": "sub_031",
-          "title": "🤖 Can MOVE tasks between columns",
+          "title": "\ud83e\udd16 Can MOVE tasks between columns",
           "done": false
         },
         {
           "id": "sub_032",
-          "title": "🤖 Can DELETE/archive tasks",
+          "title": "\ud83e\udd16 Can DELETE/archive tasks",
           "done": false
         },
         {
           "id": "sub_033",
-          "title": "🤖 Receives WEBHOOK when you move tasks to In Progress",
+          "title": "\ud83e\udd16 Receives WEBHOOK when you move tasks to In Progress",
           "done": false
         }
       ],
@@ -244,8 +244,13 @@
       "comments": [
         {
           "author": "Mission Control",
+<<<<<<< HEAD
           "text": "This guide stays in Permanent so you can always reference it. The subtasks aren't meant to be 'completed' — they're documentation!",
           "timestamp": "2026-01-01T00:00:01Z"
+=======
+          "text": "This guide stays in Permanent so you can always reference it. The subtasks aren't meant to be 'completed' \u2014 they're documentation!",
+          "timestamp": "2026-01-01T00:00:00Z"
+>>>>>>> 78b95bd12d60a73edc3dc74f491599a29fb41230
         }
       ],
       "createdAt": "2026-01-01T00:00:01Z",
@@ -253,7 +258,7 @@
     },
     {
       "id": "task_example",
-      "title": "Example Task — Delete me when ready!",
+      "title": "Example Task \u2014 Delete me when ready!",
       "description": "This is an example of what a real task looks like. Feel free to edit or delete it.\n\n**Good task descriptions include:**\n- What needs to be done\n- Why it matters\n- Any constraints or requirements\n- Links to relevant resources",
       "status": "done",
       "project": "system",
@@ -281,11 +286,12 @@
       "comments": [],
       "createdAt": "2026-01-01T00:00:02Z",
       "sortOrder": 0,
-      "completedAt": "2026-02-15T04:34:42.387Z",
+      "completedAt": "2026-02-15T19:24:59.568Z",
       "archived": true,
       "archivedAt": "2026-02-15T04:34:55.634Z"
     },
     {
+<<<<<<< HEAD
       "id": "demo_task",
       "title": "🎯 Demo Task — Show Mission Control Working",
       "description": "This task demonstrates the Mission Control system working with MoltBot. When you move this to 'In Progress', MoltBot should receive a notification and respond.\n\n**Goal:** Test the webhook notification system and verify MoltBot can see and respond to task changes.\n\n**What to do:**\n1. Drag this task to 'In Progress' column\n2. Wait for MoltBot to respond\n3. MoltBot should comment on this task\n4. Move to 'Review' when complete",
@@ -315,12 +321,132 @@
         {
           "id": "demo_004",
           "title": "Move to Review when testing complete",
+=======
+      "id": "task_1771130663721",
+      "title": "test task",
+      "description": "do you see this?",
+      "project": "",
+      "tags": [
+        ""
+      ],
+      "subtasks": [],
+      "priority": "medium",
+      "createdAt": "2026-02-15T04:44:23.721Z",
+      "isTemplate": false,
+      "status": "done",
+      "createdFromTemplate": "template_1771130648987",
+      "sortOrder": 5,
+      "completedAt": "2026-02-15T19:24:33.914Z"
+    },
+    {
+      "id": "task_1771179945406",
+      "title": "test2",
+      "description": "",
+      "project": "",
+      "tags": [
+        ""
+      ],
+      "subtasks": [],
+      "priority": "medium",
+      "createdAt": "2026-02-15T18:25:45.406Z",
+      "status": "done",
+      "sortOrder": 0,
+      "completedAt": "2026-02-15T19:24:41.429Z"
+    },
+    {
+      "id": "task_1771181066891",
+      "title": "test2",
+      "description": "",
+      "project": "",
+      "tags": [
+        ""
+      ],
+      "subtasks": [],
+      "priority": "medium",
+      "createdAt": "2026-02-15T18:44:26.891Z",
+      "status": "done",
+      "sortOrder": 3,
+      "completedAt": "2026-02-15T19:24:35.188Z"
+    },
+    {
+      "id": "task_1771181080669",
+      "title": "test3",
+      "description": "",
+      "project": "",
+      "tags": [
+        ""
+      ],
+      "subtasks": [],
+      "priority": "medium",
+      "createdAt": "2026-02-15T18:44:40.669Z",
+      "status": "done",
+      "sortOrder": 2,
+      "completedAt": "2026-02-15T19:24:39.267Z"
+    },
+    {
+      "id": "task_1771182479387",
+      "title": "test4",
+      "description": "",
+      "project": "",
+      "tags": [
+        ""
+      ],
+      "subtasks": [],
+      "priority": "medium",
+      "createdAt": "2026-02-15T19:07:59.387Z",
+      "status": "done",
+      "sortOrder": 4,
+      "completedAt": "2026-02-15T19:24:37.898Z"
+    },
+    {
+      "id": "task_1771183362971",
+      "title": "test5",
+      "description": "",
+      "project": "",
+      "tags": [
+        ""
+      ],
+      "subtasks": [],
+      "priority": "medium",
+      "createdAt": "2026-02-15T19:22:42.971Z",
+      "status": "done",
+      "sortOrder": 1,
+      "completedAt": "2026-02-15T19:24:36.764Z"
+    },
+    {
+      "id": "task_1771185270",
+      "title": "\ud83e\udd16 Joi Demo Task \u2014 Test GitHub API Integration",
+      "description": "This task tests Joi's ability to create and manage tasks directly through GitHub API.\n\n**What should happen:**\n1. Joi creates this task in GitHub\n2. Dashboard shows the task automatically\n3. Joi can move the task between statuses\n4. Dashboard updates in real-time",
+      "status": "in_progress",
+      "project": "demo",
+      "tags": [
+        "demo",
+        "joi",
+        "github-api",
+        "test"
+      ],
+      "subtasks": [
+        {
+          "id": "demo_joi_001",
+          "title": "Test task creation via GitHub API",
+          "done": false
+        },
+        {
+          "id": "demo_joi_002",
+          "title": "Verify dashboard shows new task",
+          "done": false
+        },
+        {
+          "id": "demo_joi_003",
+          "title": "Test task status changes",
+>>>>>>> 78b95bd12d60a73edc3dc74f491599a29fb41230
           "done": false
         }
       ],
       "priority": "high",
       "comments": [
         {
+<<<<<<< HEAD
           "author": "MoltBot",
           "text": "Demo task created! I can see this task in the shared task board. Move me to In Progress to test the webhook notification system!",
           "timestamp": "2026-02-15T19:35:00Z"
@@ -340,27 +466,143 @@
       "id": "demo",
       "name": "Demo",
       "color": "#10b981"
+=======
+          "author": "Joi",
+          "text": "Demo task created via GitHub API integration!",
+          "timestamp": "2026-02-15T22:54:29.901935"
+        }
+      ],
+      "createdAt": "2026-02-15T22:54:30.488323",
+      "sortOrder": 20,
+      "updatedAt": "2026-02-15T19:59:00Z",
+      "history": [
+        {
+          "from": "backlog",
+          "to": "in_progress",
+          "timestamp": "2026-02-15T19:59:00Z",
+          "actor": "Joi"
+        }
+      ]
+>>>>>>> 78b95bd12d60a73edc3dc74f491599a29fb41230
     }
   ],
   "activities": [
     {
       "type": "moved",
       "actor": "xccanas",
-      "task": "🚀 Onboarding Guide — Set Up Mission Control",
-      "from": "permanent",
-      "to": "backlog",
-      "time": "just now"
-    },
-    {
-      "type": "archive",
-      "actor": "xccanas",
-      "task": "Example Task — Delete me when ready!",
+      "task": "\ud83d\udcd6 User Guide \u2014 How to Use Mission Control",
+      "from": "done",
+      "to": "in_progress",
       "time": "just now"
     },
     {
       "type": "moved",
       "actor": "xccanas",
-      "task": "Example Task — Delete me when ready!",
+      "task": "test2",
+      "from": "permanent",
+      "to": "done",
+      "time": "just now"
+    },
+    {
+      "type": "moved",
+      "actor": "xccanas",
+      "task": "test3",
+      "from": "backlog",
+      "to": "done",
+      "time": "just now"
+    },
+    {
+      "type": "moved",
+      "actor": "xccanas",
+      "task": "test4",
+      "from": "backlog",
+      "to": "done",
+      "time": "just now"
+    },
+    {
+      "type": "moved",
+      "actor": "xccanas",
+      "task": "test5",
+      "from": "backlog",
+      "to": "done",
+      "time": "just now"
+    },
+    {
+      "type": "moved",
+      "actor": "xccanas",
+      "task": "test2",
+      "from": "backlog",
+      "to": "done",
+      "time": "just now"
+    },
+    {
+      "type": "moved",
+      "actor": "xccanas",
+      "task": "test3",
+      "from": "permanent",
+      "to": "backlog",
+      "time": "just now"
+    },
+    {
+      "type": "moved",
+      "actor": "xccanas",
+      "task": "test4",
+      "from": "permanent",
+      "to": "backlog",
+      "time": "just now"
+    },
+    {
+      "type": "moved",
+      "actor": "xccanas",
+      "task": "test5",
+      "from": "permanent",
+      "to": "backlog",
+      "time": "just now"
+    },
+    {
+      "type": "moved",
+      "actor": "xccanas",
+      "task": "test4",
+      "from": "backlog",
+      "to": "permanent",
+      "time": "just now"
+    },
+    {
+      "type": "moved",
+      "actor": "xccanas",
+      "task": "test4",
+      "from": "permanent",
+      "to": "backlog",
+      "time": "just now"
+    },
+    {
+      "type": "moved",
+      "actor": "xccanas",
+      "task": "test2",
+      "from": "permanent",
+      "to": "backlog",
+      "time": "just now"
+    },
+    {
+      "type": "moved",
+      "actor": "xccanas",
+      "task": "\ud83d\ude80 Onboarding Guide \u2014 Set Up Mission Control",
+      "from": "permanent",
+      "to": "backlog",
+      "time": "just now"
+    },
+    {
+      "type": "moved",
+      "actor": "xccanas",
+      "task": "\ud83d\ude80 Onboarding Guide \u2014 Set Up Mission Control",
+      "from": "backlog",
+      "to": "permanent",
+      "time": "just now"
+    },
+    {
+      "type": "moved",
+      "actor": "xccanas",
+      "task": "\ud83d\udcd6 User Guide \u2014 How to Use Mission Control",
       "from": "in_progress",
       "to": "done",
       "time": "just now"
@@ -368,7 +610,37 @@
     {
       "type": "moved",
       "actor": "xccanas",
-      "task": "Example Task — Delete me when ready!",
+      "task": "\ud83d\udcd6 User Guide \u2014 How to Use Mission Control",
+      "from": "permanent",
+      "to": "in_progress",
+      "time": "just now"
+    },
+    {
+      "type": "moved",
+      "actor": "xccanas",
+      "task": "\ud83d\ude80 Onboarding Guide \u2014 Set Up Mission Control",
+      "from": "permanent",
+      "to": "backlog",
+      "time": "just now"
+    },
+    {
+      "type": "archive",
+      "actor": "xccanas",
+      "task": "Example Task \u2014 Delete me when ready!",
+      "time": "just now"
+    },
+    {
+      "type": "moved",
+      "actor": "xccanas",
+      "task": "Example Task \u2014 Delete me when ready!",
+      "from": "in_progress",
+      "to": "done",
+      "time": "just now"
+    },
+    {
+      "type": "moved",
+      "actor": "xccanas",
+      "task": "Example Task \u2014 Delete me when ready!",
       "from": "backlog",
       "to": "in_progress",
       "time": "just now"
@@ -387,10 +659,27 @@
     },
     {
       "type": "created",
+<<<<<<< HEAD
       "actor": "MoltBot",
       "task": "Demo Task — Show Mission Control Working",
       "time": "just now"
     }
   ],
   "lastUpdated": "2026-02-15T19:35:00Z"
+=======
+      "actor": "Joi",
+      "task": "\ud83e\udd16 Joi Demo Task \u2014 Test GitHub API Integration",
+      "time": "2026-02-15 22:54"
+    },
+    {
+      "type": "moved",
+      "actor": "Joi",
+      "task": "\ud83e\udd16 Joi Demo Task \u2014 Test GitHub API Integration",
+      "from": "backlog",
+      "to": "in_progress",
+      "time": "2026-02-15 19:59"
+    }
+  ],
+  "lastUpdated": "2026-02-15T19:25:33.345Z"
+>>>>>>> 78b95bd12d60a73edc3dc74f491599a29fb41230
 }
