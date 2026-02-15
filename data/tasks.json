@@ -33,19 +33,6 @@
       "completedAt": "2026-02-15T04:34:42.387Z",
       "archived": true,
       "archivedAt": "2026-02-15T04:34:55.634Z"
-    },
-    {
-      "id": "task_1771188256171",
-      "title": "hey joi, can you see this task?",
-      "description": "hi, if you see this task move it to \"done\"",
-      "project": "system",
-      "tags": [
-        "system"
-      ],
-      "subtasks": [],
-      "priority": "medium",
-      "createdAt": "2026-02-15T20:44:16.171Z",
-      "status": "in_progress"
     }
   ],
   "projects": [
@@ -110,5 +97,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-02-15T21:20:17.086Z"
+  "lastUpdated": "2026-02-15T21:20:19.804Z"
 }
