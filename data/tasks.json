@@ -35,13 +35,7 @@
       "archivedAt": "2026-02-15T04:34:55.634Z"
     }
   ],
-  "projects": [
-    {
-      "id": "demo",
-      "name": "Demo",
-      "color": "#10b981"
-    }
-  ],
+  "projects": [],
   "activities": [
     {
       "type": "moved",
