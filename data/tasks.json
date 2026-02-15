@@ -1,112 +1,182 @@
 {
   "tasks": [
     {
-      "id": "task_example",
-      "title": "Example Task — Delete me when ready!",
-      "description": "This is an example of what a real task looks like. Feel free to edit or delete it.\n\n**Good task descriptions include:**\n- What needs to be done\n- Why it matters\n- Any constraints or requirements\n- Links to relevant resources",
-      "status": "done",
+      "id": "guide_onboarding",
+      "title": "🚀 Onboarding Guide — Set Up Mission Control",
+      "description": "Welcome to Mission Control! Follow these steps to complete your setup. Work through each subtask in order.\n\n**Tip:** Click on a subtask to see detailed instructions. Check it off when done.",
+      "status": "backlog",
       "project": "system",
+      "priority": "high",
       "tags": [
-        "example"
+        "setup",
+        "guide"
       ],
       "subtasks": [
         {
-          "id": "sub_001",
-          "title": "First step of the task",
-          "done": false
+          "id": "setup_dashboard",
+          "title": "📊 Access Mission Control Dashboard",
+          "description": "Visit the live dashboard at https://xccanas.github.io/mission-control-dashboard/assets/index.html",
+          "status": "backlog",
+          "completed": false
         },
         {
-          "id": "sub_002",
-          "title": "Second step",
-          "done": false
+          "id": "setup_openclaw",
+          "title": "🚀 Configure OpenClaw Gateway",
+          "description": "OpenClaw is already configured with proper hooks and transforms for Mission Control",
+          "status": "backlog",
+          "completed": false
         },
         {
-          "id": "sub_003",
-          "title": "Final step",
-          "done": false
+          "id": "setup_cli",
+          "title": "⚙️ Prepare CLI Tools",
+          "description": "mc-update.sh tools are available in the repository scripts directory",
+          "status": "backlog",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "guide_user",
+      "title": "📖 User Guide — How to Use Mission Control",
+      "description": "Learn how to use Mission Control for collaborative task management with MoltBot.",
+      "status": "permanent",
+      "project": "system",
+      "priority": "medium",
+      "tags": [
+        "guide",
+        "documentation"
+      ],
+      "subtasks": [
+        {
+          "id": "guide_basic_workflow",
+          "title": "🔄 Basic Workflow",
+          "description": "Move tasks to 'In Progress' → I receive notification → I work on them → Status updates automatically",
+          "status": "permanent",
+          "completed": false
+        },
+        {
+          "id": "guide_dashboard",
+          "title": "📊 Using the Dashboard",
+          "description": "Drag and drop tasks between columns to track progress",
+          "status": "permanent",
+          "completed": false
+        },
+        {
+          "id": "guide_cli",
+          "title": "⚙️ CLI Tools Usage",
+          "description": "Use mc-update.sh for advanced task management and automation",
+          "status": "permanent",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "example_task",
+      "title": "Example Task — Delete me when ready!",
+      "description": "This is an example task that demonstrates the Mission Control system. Feel free to delete it.",
+      "status": "done",
+      "project": "example",
+      "priority": "low",
+      "tags": [
+        "example"
+      ],
+      "completed": true,
+      "subtasks": [
+        {
+          "id": "example_subtask",
+          "title": "Example Subtask",
+          "description": "This shows how subtasks work in Mission Control",
+          "status": "done",
+          "completed": true
+        }
+      ]
+    },
+    {
+      "id": "joi_demo_task",
+      "title": "🤖 Joi Demo Task — Test GitHub API Integration",
+      "status": "in_progress",
+      "project": "demo",
+      "priority": "medium",
+      "tags": [
+        "demo",
+        "joi"
+      ],
+      "subtasks": [
+        {
+          "id": "demo_subtask_1",
+          "title": "🔍 Test Mission Control Integration",
+          "description": "This task is being used to test the Mission Control system integration",
+          "status": "in_progress",
+          "completed": false
         }
       ],
-      "priority": "low",
-      "comments": [],
-      "createdAt": "2026-01-01T00:00:02Z",
-      "sortOrder": 0,
-      "completedAt": "2026-02-15T04:34:42.387Z",
-      "archived": true,
-      "archivedAt": "2026-02-15T04:34:55.634Z"
+      "comments": [
+        {
+          "id": "test_comment",
+          "author": "Joi",
+          "text": "🧪 Testing Mission Control workflow - this should trigger webhook!",
+          "createdAt": "2026-02-16T01:29:00Z"
+        },
+        {
+          "id": "webhook_test_17717260",
+          "author": "Test User",
+          "text": "🧪 Testing real webhook trigger via actual commit",
+          "createdAt": "2026-02-16T02:50:00Z"
+        }
+      ]
     },
     {
-      "id": "task_1771190890667",
-      "title": "Test Mission Control Workflow",
-      "description": "This tests if the webhook system works",
-      "project": "",
-      "tags": [
-        ""
-      ],
-      "subtasks": [],
-      "priority": "medium",
-      "createdAt": "2026-02-15T21:28:10.667Z",
+      "id": "joi_demo_task_2",
+      "title": "hey joi, can you see this task?",
       "status": "in_progress",
-      "sortOrder": 0
+      "project": "demo",
+      "priority": "medium",
+      "tags": [
+        "demo",
+        "joi"
+      ],
+      "subtasks": [
+        {
+          "id": "demo_subtask_2",
+          "title": "🔍 Test Task Visibility",
+          "description": "Testing if Joi can see and work on this task",
+          "status": "in_progress",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "joi_test_task",
+      "title": "joi test5",
+      "status": "backlog",
+      "project": "test",
+      "priority": "low",
+      "tags": [
+        "test"
+      ],
+      "subtasks": []
     }
   ],
-  "projects": [],
-  "activities": [
+  "projects": [
     {
-      "type": "moved",
-      "actor": "xccanas",
-      "task": "Test Mission Control Workflow",
-      "from": "backlog",
-      "to": "in_progress",
-      "time": "just now"
+      "id": "system",
+      "name": "System",
+      "color": "#6366f1"
     },
     {
-      "type": "moved",
-      "actor": "xccanas",
-      "task": "🚀 Onboarding Guide — Set Up Mission Control",
-      "from": "permanent",
-      "to": "backlog",
-      "time": "just now"
+      "id": "demo",
+      "name": "Demo",
+      "color": "#10b981"
     },
     {
-      "type": "archive",
-      "actor": "xccanas",
-      "task": "Example Task — Delete me when ready!",
-      "time": "just now"
+      "id": "example",
+      "name": "Example",
+      "color": "#f59e0b"
     },
     {
-      "type": "moved",
-      "actor": "xccanas",
-      "task": "Example Task — Delete me when ready!",
-      "from": "in_progress",
-      "to": "done",
-      "time": "just now"
-    },
-    {
-      "type": "moved",
-      "actor": "xccanas",
-      "task": "Example Task — Delete me ready!",
-      "from": "backlog",
-      "to": "in_progress",
-      "time": "just now"
-    },
-    {
-      "type": "created",
-      "actor": "Mission Control",
-      "task": "Onboarding Guide",
-      "time": "just now"
-    },
-    {
-      "type": "created",
-      "actor": "Mission Control",
-      "task": "User Guide",
-      "time": "just now"
-    },
-    {
-      "type": "created",
-      "actor": "MoltBot",
-      "task": "Demo Task — Show Mission Control Working",
-      "time": "just now"
+      "id": "test",
+      "name": "Test",
+      "color": "#8b5cf6"
     }
-  ],
-  "lastUpdated": "2026-02-15T21:28:18.151Z"
+  ]
 }
