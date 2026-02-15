@@ -3253,22 +3253,22 @@
                 const response = await Promise.race([
                     fetch(
                         `https://api.github.com/repos/${CONFIG.owner}/${CONFIG.repo}/contents/data/crons.json`,
-                    {
-                        method: 'PUT',
-                        headers: {
-                            'Authorization': `token ${STATE.token}`,
-                            'Accept': 'application/vnd.github.v3+json',
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify({
-                            message: commitMessage || 'Update crons via Mission Control',
-                            content: content,
-                            sha: STATE.cronsSha,
-                            branch: CONFIG.branch
-                        })
-                    }
-                ]),
-                timeoutPromise
+                        {
+                            method: 'PUT',
+                            headers: {
+                                'Authorization': `token ${STATE.token}`,
+                                'Accept': 'application/vnd.github.v3+json',
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({
+                                message: commitMessage || 'Update crons via Mission Control',
+                                content: content,
+                                sha: STATE.cronsSha,
+                                branch: CONFIG.branch
+                            })
+                        }
+                    ),
+                    timeoutPromise
                 ]);
                 
                 if (!response.ok) {
