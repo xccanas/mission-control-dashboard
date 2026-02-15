@@ -286,21 +286,6 @@
       "archivedAt": "2026-02-15T04:34:55.634Z"
     },
     {
-      "id": "template_1771130648987",
-      "title": "test task",
-      "description": "do you see this?",
-      "project": "",
-      "tags": [
-        ""
-      ],
-      "subtasks": [],
-      "priority": "medium",
-      "createdAt": "2026-02-15T04:44:08.987Z",
-      "isTemplate": true,
-      "baseStatus": "backlog",
-      "executionCount": 1
-    },
-    {
       "id": "task_1771130663721",
       "title": "test task",
       "description": "do you see this?",
@@ -566,5 +551,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-02-15T19:25:23.030Z"
+  "lastUpdated": "2026-02-15T19:25:33.345Z"
 }
