@@ -318,20 +318,6 @@
       "completedAt": "2026-02-15T19:24:33.914Z"
     },
     {
-      "id": "task_1771179314504",
-      "title": "test",
-      "description": "",
-      "status": "scheduled",
-      "scheduledAt": "2026-02-16T15:15:00.000Z",
-      "priority": "medium",
-      "project": "",
-      "tags": [
-        "scheduled"
-      ],
-      "subtasks": [],
-      "createdAt": "2026-02-15T18:15:14.504Z"
-    },
-    {
       "id": "task_1771179945406",
       "title": "test2",
       "description": "",
@@ -594,5 +580,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-02-15T19:24:59.568Z"
+  "lastUpdated": "2026-02-15T19:25:19.251Z"
 }
