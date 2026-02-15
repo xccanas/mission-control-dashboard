@@ -92,19 +92,6 @@
       "priority": "medium",
       "createdAt": "2026-02-15T20:44:16.171Z",
       "status": "in_progress"
-    },
-    {
-      "id": "task_1771188864411",
-      "title": "joi test5",
-      "description": "",
-      "project": "system",
-      "tags": [
-        "system"
-      ],
-      "subtasks": [],
-      "priority": "medium",
-      "createdAt": "2026-02-15T20:54:24.411Z",
-      "status": "backlog"
     }
   ],
   "projects": [
@@ -169,5 +156,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-02-15T21:20:10.421Z"
+  "lastUpdated": "2026-02-15T21:20:12.987Z"
 }
