@@ -381,7 +381,7 @@
       "id": "task_1771185270",
       "title": "\ud83e\udd16 Joi Demo Task \u2014 Test GitHub API Integration",
       "description": "This task tests Joi's ability to create and manage tasks directly through GitHub API.\n\n**What should happen:**\n1. Joi creates this task in GitHub\n2. Dashboard shows the task automatically\n3. Joi can move the task between statuses\n4. Dashboard updates in real-time",
-      "status": "backlog",
+      "status": "in_progress",
       "project": "demo",
       "tags": [
         "demo",
@@ -415,7 +415,16 @@
         }
       ],
       "createdAt": "2026-02-15T22:54:30.488323",
-      "sortOrder": 20
+      "sortOrder": 20,
+      "updatedAt": "2026-02-15T19:59:00Z",
+      "history": [
+        {
+          "from": "backlog",
+          "to": "in_progress",
+          "timestamp": "2026-02-15T19:59:00Z",
+          "actor": "Joi"
+        }
+      ]
     }
   ],
   "projects": [],
@@ -595,6 +604,14 @@
       "actor": "Joi",
       "task": "\ud83e\udd16 Joi Demo Task \u2014 Test GitHub API Integration",
       "time": "2026-02-15 22:54"
+    },
+    {
+      "type": "moved",
+      "actor": "Joi",
+      "task": "\ud83e\udd16 Joi Demo Task \u2014 Test GitHub API Integration",
+      "from": "backlog",
+      "to": "in_progress",
+      "time": "2026-02-15 19:59"
     }
   ],
   "lastUpdated": "2026-02-15T19:25:33.345Z"
