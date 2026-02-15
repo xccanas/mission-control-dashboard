@@ -4239,7 +4239,7 @@
                 task.archivedAt = new Date().toISOString();
                 addActivity(`📦 Archived: ${task.title}`, 'archive');
                 renderTasks();
-                saveToGitHub();
+                autoSave(`Archive ${task.title}`);
             }
         }
 
@@ -4252,7 +4252,7 @@
                 task.status = 'done';
                 addActivity(`📤 Unarchived: ${task.title}`, 'unarchive');
                 renderTasks();
-                saveToGitHub();
+                autoSave(`Unarchive ${task.title}`);
             }
         }
 
