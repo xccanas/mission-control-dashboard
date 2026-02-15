@@ -255,7 +255,7 @@
       "id": "task_example",
       "title": "Example Task — Delete me when ready!",
       "description": "This is an example of what a real task looks like. Feel free to edit or delete it.\n\n**Good task descriptions include:**\n- What needs to be done\n- Why it matters\n- Any constraints or requirements\n- Links to relevant resources",
-      "status": "backlog",
+      "status": "in_progress",
       "project": "default",
       "tags": [
         "example"
@@ -279,7 +279,8 @@
       ],
       "priority": "low",
       "comments": [],
-      "createdAt": "2026-01-01T00:00:02Z"
+      "createdAt": "2026-01-01T00:00:02Z",
+      "sortOrder": 0
     }
   ],
   "projects": [
@@ -298,6 +299,14 @@
   ],
   "activities": [
     {
+      "type": "moved",
+      "actor": "xccanas",
+      "task": "Example Task — Delete me when ready!",
+      "from": "backlog",
+      "to": "in_progress",
+      "time": "just now"
+    },
+    {
       "type": "created",
       "actor": "Mission Control",
       "task": "Onboarding Guide",
@@ -310,5 +319,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-02-15T04:33:19.529Z"
+  "lastUpdated": "2026-02-15T04:33:35.199Z"
 }
