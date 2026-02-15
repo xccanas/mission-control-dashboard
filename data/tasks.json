@@ -1,69 +1,6 @@
 {
   "tasks": [
     {
-      "id": "guide_onboarding",
-      "title": "🚀 Onboarding Guide — Set Up Mission Control",
-      "description": "Welcome to Mission Control! Follow these steps to complete your setup. Work through each subtask in order.\n\n**Tip:** Click on a subtask to see detailed instructions. Check it off when done.",
-      "status": "backlog",
-      "project": "system",
-      "tags": [
-        "guide",
-        "setup"
-      ],
-      "subtasks": [
-        {
-          "id": "sub_001",
-          "title": "1. Enable GitHub Pages: Settings → Pages → Branch: main → Save",
-          "done": false
-        },
-        {
-          "id": "sub_002",
-          "title": "2. Create GitHub Token: github.com/settings/tokens → Generate (classic) → Scope: repo",
-          "done": false
-        },
-        {
-          "id": "sub_003",
-          "title": "3. Connect Dashboard: Open your GitHub Pages URL → Click 'Connect GitHub' → Paste token",
-          "done": false
-        },
-        {
-          "id": "sub_004",
-          "title": "4. Install Tailscale: brew install tailscale && tailscale up",
-          "done": false
-        },
-        {
-          "id": "sub_005",
-          "title": "5. Enable Funnel: tailscale funnel 18789 → Copy your URL",
-          "done": false
-        },
-        {
-          "id": "sub_006",
-          "title": "6. Generate Webhook Token: openssl rand -hex 32 → Save it",
-          "done": false
-        },
-        {
-          "id": "sub_007",
-          "title": "7. Add GitHub Webhook: Settings → Webhooks → Add → URL: https://YOUR-TAILSCALE-URL/hooks/github?token=YOUR-TOKEN",
-          "done": false
-        },
-        {
-          "id": "sub_008",
-          "title": "8. Test: Create a task, move to In Progress, verify MoltBot receives notification",
-          "done": false
-        }
-      ],
-      "priority": "high",
-      "comments": [
-        {
-          "author": "Mission Control",
-          "text": "This guide stays in Permanent so you can always reference it. The subtasks aren't meant to be 'completed' — they're documentation!",
-          "timestamp": "2026-01-01T00:00:01Z"
-        }
-      ],
-      "createdAt": "2026-01-01T00:00:00Z",
-      "sortOrder": 0
-    },
-    {
       "id": "task_example",
       "title": "Example Task — Delete me when ready!",
       "description": "This is an example of what a real task looks like. Feel free to edit or delete it.\n\n**Good task descriptions include:**\n- What needs to be done\n- Why it matters\n- Any constraints or requirements\n- Links to relevant resources",
@@ -232,5 +169,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-02-15T21:20:07.130Z"
+  "lastUpdated": "2026-02-15T21:20:10.421Z"
 }
