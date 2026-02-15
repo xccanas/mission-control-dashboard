@@ -391,20 +391,6 @@
       "status": "done",
       "sortOrder": 1,
       "completedAt": "2026-02-15T19:24:36.764Z"
-    },
-    {
-      "id": "task_1771183377011",
-      "title": "test6",
-      "description": "",
-      "status": "scheduled",
-      "scheduledAt": "2026-02-16T16:22:00.000Z",
-      "priority": "medium",
-      "project": "system",
-      "tags": [
-        "scheduled"
-      ],
-      "subtasks": [],
-      "createdAt": "2026-02-15T19:22:57.011Z"
     }
   ],
   "projects": [],
@@ -580,5 +566,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-02-15T19:25:19.251Z"
+  "lastUpdated": "2026-02-15T19:25:23.030Z"
 }
