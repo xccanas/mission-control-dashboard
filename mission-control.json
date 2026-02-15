@@ -1,0 +1,26 @@
+{
+  "gateway": {
+    "url": "https://desktop-5082mra.taile48fd0.ts.net/",
+    "hookToken": "a1b2c3d4e5f6789012345678901234567890abcdef"
+  },
+  "workspace": {
+    "path": "C:\\Users\\anas\\.openclaw\\workspace\\mission-control-repo",
+    "tasksFile": "data/tasks.json",
+    "snapshotFile": "data/.tasks-snapshot.json",
+    "debugLog": "data/.webhook-debug.log"
+  },
+  "slack": {
+    "botToken": "xoxb-YOUR-BOT-TOKEN",
+    "channel": "C0123456789"
+  },
+  "secrets": {
+    "webhookSecretFile": "~/.clawdbot/secrets/github-webhook-secret",
+    "githubTokenFile": "~\\.config\\gh\\hosts.yml"
+  },
+  "agent": {
+    "sessionPrefix": "hook:mission-control",
+    "defaultTimeout": 300,
+    "epicTimeoutBase": 600,
+    "epicTimeoutPerChild": 300
+  }
+}
