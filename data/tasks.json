@@ -313,9 +313,10 @@
       "priority": "medium",
       "createdAt": "2026-02-15T04:44:23.721Z",
       "isTemplate": false,
-      "status": "backlog",
+      "status": "done",
       "createdFromTemplate": "template_1771130648987",
-      "sortOrder": 0
+      "sortOrder": 0,
+      "completedAt": "2026-02-15T19:24:33.914Z"
     },
     {
       "id": "task_1771179314504",
@@ -541,5 +542,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-02-15T19:24:18.329Z"
+  "lastUpdated": "2026-02-15T19:24:33.914Z"
 }
