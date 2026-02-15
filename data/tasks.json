@@ -249,7 +249,7 @@
         }
       ],
       "createdAt": "2026-01-01T00:00:01Z",
-      "sortOrder": 1,
+      "sortOrder": 2,
       "completedAt": "2026-02-15T04:42:42.222Z"
     },
     {
@@ -315,7 +315,7 @@
       "isTemplate": false,
       "status": "done",
       "createdFromTemplate": "template_1771130648987",
-      "sortOrder": 5,
+      "sortOrder": 6,
       "completedAt": "2026-02-15T19:24:33.914Z"
     },
     {
@@ -343,8 +343,9 @@
       "subtasks": [],
       "priority": "medium",
       "createdAt": "2026-02-15T18:25:45.406Z",
-      "status": "permanent",
-      "sortOrder": 0
+      "status": "done",
+      "sortOrder": 0,
+      "completedAt": "2026-02-15T19:24:41.429Z"
     },
     {
       "id": "task_1771181066891",
@@ -358,7 +359,7 @@
       "priority": "medium",
       "createdAt": "2026-02-15T18:44:26.891Z",
       "status": "done",
-      "sortOrder": 3,
+      "sortOrder": 4,
       "completedAt": "2026-02-15T19:24:35.188Z"
     },
     {
@@ -373,7 +374,7 @@
       "priority": "medium",
       "createdAt": "2026-02-15T18:44:40.669Z",
       "status": "done",
-      "sortOrder": 2,
+      "sortOrder": 3,
       "completedAt": "2026-02-15T19:24:39.267Z"
     },
     {
@@ -388,7 +389,7 @@
       "priority": "medium",
       "createdAt": "2026-02-15T19:07:59.387Z",
       "status": "done",
-      "sortOrder": 4,
+      "sortOrder": 5,
       "completedAt": "2026-02-15T19:24:37.898Z"
     },
     {
@@ -403,7 +404,7 @@
       "priority": "medium",
       "createdAt": "2026-02-15T19:22:42.971Z",
       "status": "done",
-      "sortOrder": 0,
+      "sortOrder": 1,
       "completedAt": "2026-02-15T19:24:36.764Z"
     },
     {
@@ -423,6 +424,14 @@
   ],
   "projects": [],
   "activities": [
+    {
+      "type": "moved",
+      "actor": "xccanas",
+      "task": "test2",
+      "from": "permanent",
+      "to": "done",
+      "time": "just now"
+    },
     {
       "type": "moved",
       "actor": "xccanas",
@@ -578,5 +587,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-02-15T19:24:39.267Z"
+  "lastUpdated": "2026-02-15T19:24:41.429Z"
 }
