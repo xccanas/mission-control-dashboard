@@ -198,7 +198,8 @@
       "subtasks": [],
       "priority": "medium",
       "createdAt": "2026-02-16T01:28:57.740Z",
-      "status": "backlog"
+      "status": "in_progress",
+      "sortOrder": 0
     }
   ],
   "projects": [
@@ -223,8 +224,16 @@
       "color": "#8b5cf6"
     }
   ],
-  "lastUpdated": "2026-02-16T01:28:57.740Z",
+  "lastUpdated": "2026-02-16T01:37:20.287Z",
   "activities": [
+    {
+      "type": "moved",
+      "actor": "xccanas",
+      "task": "testttt",
+      "from": "backlog",
+      "to": "in_progress",
+      "time": "just now"
+    },
     {
       "type": "moved",
       "actor": "xccanas",
