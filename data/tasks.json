@@ -178,6 +178,12 @@
           "author": "MoltBot",
           "text": "✅ Task visibility confirmed - I can see and am processing this task",
           "createdAt": "2026-02-16T03:21:32.894414Z"
+        },
+        {
+          "id": "c3",
+          "author": "MoltBot",
+          "text": "Visibility",
+          "createdAt": "2026-02-16T05:26:25.832595Z"
         }
       ]
     },
