@@ -252,6 +252,21 @@
           "createdAt": "2026-02-16T05:28:05.725963Z"
         }
       ]
+    },
+    {
+      "id": "template_1771208939327",
+      "title": "test",
+      "description": "",
+      "project": "system",
+      "tags": [
+        "system"
+      ],
+      "subtasks": [],
+      "priority": "medium",
+      "createdAt": "2026-02-16T02:28:59.327Z",
+      "isTemplate": true,
+      "baseStatus": "backlog",
+      "executionCount": 0
     }
   ],
   "projects": [
@@ -276,7 +291,7 @@
       "color": "#8b5cf6"
     }
   ],
-  "lastUpdated": "2026-02-16T02:26:42.975Z",
+  "lastUpdated": "2026-02-16T02:28:59.327Z",
   "activities": [
     {
       "type": "moved",
