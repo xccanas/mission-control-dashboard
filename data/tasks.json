@@ -176,13 +176,14 @@
     {
       "id": "joi_test_task",
       "title": "joi test5",
-      "status": "backlog",
+      "status": "in_progress",
       "project": "test",
       "priority": "low",
       "tags": [
         "test"
       ],
-      "subtasks": []
+      "subtasks": [],
+      "sortOrder": 0
     }
   ],
   "projects": [
@@ -205,6 +206,17 @@
       "id": "test",
       "name": "Test",
       "color": "#8b5cf6"
+    }
+  ],
+  "lastUpdated": "2026-02-16T00:39:22.653Z",
+  "activities": [
+    {
+      "type": "moved",
+      "actor": "xccanas",
+      "task": "joi test5",
+      "from": "backlog",
+      "to": "in_progress",
+      "time": "just now"
     }
   ]
 }
