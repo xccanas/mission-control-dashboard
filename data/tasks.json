@@ -236,15 +236,20 @@
       "subtasks": [],
       "priority": "medium",
       "createdAt": "2026-02-16T01:28:57.740Z",
-      "status": "in_progress",
+      "status": "review",
       "sortOrder": 0,
-      "processingStartedAt": "2026-02-16T05:27:59.076310Z",
       "comments": [
         {
           "id": "c_1771208879076",
           "author": "MoltBot",
           "text": "🤖 Processing started",
           "createdAt": "2026-02-16T05:27:59.076310Z"
+        },
+        {
+          "id": "c2",
+          "author": "MoltBot",
+          "text": "System",
+          "createdAt": "2026-02-16T05:28:05.725963Z"
         }
       ]
     }
