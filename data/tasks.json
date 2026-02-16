@@ -122,8 +122,15 @@
           "author": "Test User",
           "text": "🧪 Testing real webhook trigger via actual commit",
           "createdAt": "2026-02-16T02:50:00Z"
+        },
+        {
+          "id": "c_1771201270508",
+          "author": "MoltBot",
+          "text": "🤖 Processing started",
+          "createdAt": "2026-02-16T03:21:10.508788Z"
         }
-      ]
+      ],
+      "processingStartedAt": "2026-02-16T03:21:10.508788Z"
     },
     {
       "id": "joi_demo_task_2",
