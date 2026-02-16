@@ -178,7 +178,7 @@
     {
       "id": "joi_test_task",
       "title": "joi test5",
-      "status": "in_progress",
+      "status": "backlog",
       "project": "test",
       "priority": "low",
       "tags": [
@@ -224,8 +224,16 @@
       "color": "#8b5cf6"
     }
   ],
-  "lastUpdated": "2026-02-16T01:37:20.287Z",
+  "lastUpdated": "2026-02-16T01:42:47.101Z",
   "activities": [
+    {
+      "type": "moved",
+      "actor": "xccanas",
+      "task": "joi test5",
+      "from": "in_progress",
+      "to": "backlog",
+      "time": "just now"
+    },
     {
       "type": "moved",
       "actor": "xccanas",
