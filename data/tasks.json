@@ -204,7 +204,7 @@
     {
       "id": "joi_test_task",
       "title": "joi test5",
-      "status": "review",
+      "status": "in_progress",
       "project": "test",
       "priority": "low",
       "tags": [
@@ -224,6 +224,12 @@
           "author": "MoltBot",
           "text": "Test",
           "createdAt": "2026-02-16T05:27:52.068596Z"
+        },
+        {
+          "id": "c_1771215412345",
+          "author": "Joi",
+          "text": "🚀 Started working on task - moved to in_progress",
+          "createdAt": "2026-02-16T06:42:15.123450Z"
         }
       ]
     },
@@ -238,7 +244,7 @@
       "subtasks": [],
       "priority": "medium",
       "createdAt": "2026-02-16T01:28:57.740Z",
-      "status": "review",
+      "status": "in_progress",
       "sortOrder": 0,
       "comments": [
         {
@@ -252,6 +258,12 @@
           "author": "MoltBot",
           "text": "System",
           "createdAt": "2026-02-16T05:28:05.725963Z"
+        },
+        {
+          "id": "c_1771215415432",
+          "author": "Joi",
+          "text": "🚀 Started working on task - moved to in_progress",
+          "createdAt": "2026-02-16T06:42:15.543210Z"
         }
       ]
     },
