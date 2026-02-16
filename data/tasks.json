@@ -141,7 +141,7 @@
     {
       "id": "joi_demo_task_2",
       "title": "hey joi, can you see this task?",
-      "status": "in_progress",
+      "status": "active",
       "project": "demo",
       "priority": "medium",
       "tags": [
