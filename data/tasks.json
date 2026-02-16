@@ -202,7 +202,7 @@
     {
       "id": "joi_test_task",
       "title": "joi test5",
-      "status": "in_progress",
+      "status": "review",
       "project": "test",
       "priority": "low",
       "tags": [
@@ -210,13 +210,18 @@
       ],
       "subtasks": [],
       "sortOrder": 0,
-      "processingStartedAt": "2026-02-16T05:27:45.196987Z",
       "comments": [
         {
           "id": "c_1771208865196",
           "author": "MoltBot",
           "text": "🤖 Processing started",
           "createdAt": "2026-02-16T05:27:45.196987Z"
+        },
+        {
+          "id": "c2",
+          "author": "MoltBot",
+          "text": "Test",
+          "createdAt": "2026-02-16T05:27:52.068596Z"
         }
       ]
     },
