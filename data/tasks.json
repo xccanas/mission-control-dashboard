@@ -109,7 +109,8 @@
           "title": "🔍 Test Mission Control Integration",
           "description": "This task is being used to test the Mission Control system integration",
           "status": "in_progress",
-          "completed": false
+          "completed": false,
+          "done": true
         }
       ],
       "comments": [
