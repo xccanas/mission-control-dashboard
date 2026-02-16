@@ -170,7 +170,6 @@
           "completed": false
         }
       ],
-      "processingStartedAt": "2026-02-16T03:21:17.161762Z",
       "comments": [
         {
           "id": "c_1771201277161",
@@ -189,6 +188,12 @@
           "author": "MoltBot",
           "text": "Visibility",
           "createdAt": "2026-02-16T05:26:25.832595Z"
+        },
+        {
+          "id": "c4",
+          "author": "MoltBot",
+          "text": "Visibility",
+          "createdAt": "2026-02-16T05:26:42.376747Z"
         }
       ]
     },
