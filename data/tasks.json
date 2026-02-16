@@ -4,7 +4,7 @@
       "id": "guide_onboarding",
       "title": "🚀 Onboarding Guide — Set Up Mission Control",
       "description": "Welcome to Mission Control! Follow these steps to complete your setup. Work through each subtask in order.\n\n**Tip:** Click on a subtask to see detailed instructions. Check it off when done.",
-      "status": "backlog",
+      "status": "permanent",
       "project": "system",
       "priority": "high",
       "tags": [
@@ -33,7 +33,8 @@
           "status": "backlog",
           "completed": false
         }
-      ]
+      ],
+      "sortOrder": 0
     },
     {
       "id": "guide_user",
@@ -68,7 +69,8 @@
           "status": "permanent",
           "completed": false
         }
-      ]
+      ],
+      "sortOrder": 0
     },
     {
       "id": "example_task",
@@ -176,13 +178,28 @@
     {
       "id": "joi_test_task",
       "title": "joi test5",
-      "status": "backlog",
+      "status": "in_progress",
       "project": "test",
       "priority": "low",
       "tags": [
         "test"
       ],
-      "subtasks": []
+      "subtasks": [],
+      "sortOrder": 0
+    },
+    {
+      "id": "task_1771205337740",
+      "title": "testttt",
+      "description": "",
+      "project": "system",
+      "tags": [
+        "system"
+      ],
+      "subtasks": [],
+      "priority": "medium",
+      "createdAt": "2026-02-16T01:28:57.740Z",
+      "status": "in_progress",
+      "sortOrder": 0
     }
   ],
   "projects": [
@@ -205,6 +222,65 @@
       "id": "test",
       "name": "Test",
       "color": "#8b5cf6"
+    }
+  ],
+  "lastUpdated": "2026-02-16T01:42:58.559Z",
+  "activities": [
+    {
+      "type": "moved",
+      "actor": "xccanas",
+      "task": "testttt",
+      "from": "backlog",
+      "to": "in_progress",
+      "time": "just now"
+    },
+    {
+      "type": "moved",
+      "actor": "xccanas",
+      "task": "joi test5",
+      "from": "backlog",
+      "to": "in_progress",
+      "time": "just now"
+    },
+    {
+      "type": "moved",
+      "actor": "xccanas",
+      "task": "testttt",
+      "from": "in_progress",
+      "to": "backlog",
+      "time": "just now"
+    },
+    {
+      "type": "moved",
+      "actor": "xccanas",
+      "task": "joi test5",
+      "from": "in_progress",
+      "to": "backlog",
+      "time": "just now"
+    },
+    {
+      "type": "moved",
+      "actor": "xccanas",
+      "task": "testttt",
+      "from": "backlog",
+      "to": "in_progress",
+      "time": "just now"
+    },
+    {
+      "type": "moved",
+      "actor": "xccanas",
+      "task": "🚀 Onboarding Guide — Set Up Mission Control",
+      "from": "backlog",
+      "to": "permanent",
+      "time": "just now"
+    },
+    {
+      "type": "moved",
+      "actor": "xccanas",
+      "task": "joi test5",
+      "from": "backlog",
+      "to": "in_progress",
+      "time": "just now"
     }
   ]
 }
