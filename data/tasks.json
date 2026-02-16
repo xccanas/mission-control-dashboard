@@ -209,7 +209,16 @@
         "test"
       ],
       "subtasks": [],
-      "sortOrder": 0
+      "sortOrder": 0,
+      "processingStartedAt": "2026-02-16T05:27:45.196987Z",
+      "comments": [
+        {
+          "id": "c_1771208865196",
+          "author": "MoltBot",
+          "text": "🤖 Processing started",
+          "createdAt": "2026-02-16T05:27:45.196987Z"
+        }
+      ]
     },
     {
       "id": "task_1771205337740",
