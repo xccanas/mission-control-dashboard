@@ -94,7 +94,7 @@
     {
       "id": "joi_demo_task",
       "title": "🤖 Joi Demo Task — Test GitHub API Integration",
-      "status": "in_progress",
+      "status": "active",
       "project": "demo",
       "priority": "medium",
       "tags": [
