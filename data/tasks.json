@@ -186,6 +186,19 @@
       ],
       "subtasks": [],
       "sortOrder": 0
+    },
+    {
+      "id": "task_1771205337740",
+      "title": "testttt",
+      "description": "",
+      "project": "system",
+      "tags": [
+        "system"
+      ],
+      "subtasks": [],
+      "priority": "medium",
+      "createdAt": "2026-02-16T01:28:57.740Z",
+      "status": "backlog"
     }
   ],
   "projects": [
@@ -210,7 +223,7 @@
       "color": "#8b5cf6"
     }
   ],
-  "lastUpdated": "2026-02-16T01:28:47.174Z",
+  "lastUpdated": "2026-02-16T01:28:57.740Z",
   "activities": [
     {
       "type": "moved",
