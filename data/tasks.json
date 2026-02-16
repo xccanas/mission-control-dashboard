@@ -136,6 +136,12 @@
           "author": "MoltBot",
           "text": "✅ Task acknowledged - I can see and am processing this GitHub API Integration demo task",
           "createdAt": "2026-02-16T03:21:27.122666Z"
+        },
+        {
+          "id": "c5",
+          "author": "MoltBot",
+          "text": "Demo",
+          "createdAt": "2026-02-16T05:26:06.663500Z"
         }
       ],
       "processingStartedAt": "2026-02-16T03:21:10.508788Z"
