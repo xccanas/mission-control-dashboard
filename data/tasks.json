@@ -150,6 +150,15 @@
           "status": "in_progress",
           "completed": false
         }
+      ],
+      "processingStartedAt": "2026-02-16T03:21:17.161762Z",
+      "comments": [
+        {
+          "id": "c_1771201277161",
+          "author": "MoltBot",
+          "text": "🤖 Processing started",
+          "createdAt": "2026-02-16T03:21:17.161762Z"
+        }
       ]
     },
     {
