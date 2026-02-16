@@ -96,7 +96,7 @@
     {
       "id": "joi_demo_task",
       "title": "🤖 Joi Demo Task — Test GitHub API Integration",
-      "status": "review",
+      "status": "done",
       "project": "demo",
       "priority": "medium",
       "tags": [
@@ -149,7 +149,8 @@
           "text": "Demo",
           "createdAt": "2026-02-16T05:26:32.892415Z"
         }
-      ]
+      ],
+      "completedAt": "2026-02-16T02:26:42.975Z"
     },
     {
       "id": "joi_demo_task_2",
@@ -242,7 +243,7 @@
       "color": "#8b5cf6"
     }
   ],
-  "lastUpdated": "2026-02-16T02:26:42.100Z",
+  "lastUpdated": "2026-02-16T02:26:42.975Z",
   "activities": [
     {
       "type": "moved",
