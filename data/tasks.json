@@ -164,6 +164,12 @@
           "author": "MoltBot",
           "text": "🤖 Processing started",
           "createdAt": "2026-02-16T03:21:17.161762Z"
+        },
+        {
+          "id": "c2",
+          "author": "MoltBot",
+          "text": "✅ Task visibility confirmed - I can see and am processing this task",
+          "createdAt": "2026-02-16T03:21:32.894414Z"
         }
       ]
     },
